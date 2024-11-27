@@ -12,36 +12,87 @@ body{
     font-size: 1rem;
 }
 
-.navbar{
-    width: 1621px;
+.container{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+    .menu-container{
+        display: none;
+    }
+    }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+
+.navbar-backgound{
+    align-items: center;
+    justify-content: center;
     height: 2rem;
     background-color: black;
-    position: sticky;
     top: 0;
+    position: sticky;
 }
 
 .navbar-container{
     display: flex;
     align-items: center;
-    width: 90%;
+    justify-content: center;
     color: white;
-    padding: 0 15;
-    height: 100%;
-    justify-self: center;
-    border: 1px solid white;
+    height: 2rem;
+    background-color: black;
+    top: 0;
+    position: sticky;
+
 }
 
 .Logo-container{
     flex: 1;
     text-wrap: nowrap;
-    background-color: red;
+    /* background-color: red; */
     padding: 0 5;
     cursor: pointer;
 }
 
 .menu-container{
     flex: 12;
-    background-color: green;
+    /* background-color: green; */
     padding: 0 10;
     font-size: 0.5rem;
 }
@@ -58,7 +109,7 @@ body{
 
 .search-container{
     flex: 3;
-    background-color: red;
+    /* background-color: red; */
     padding: 0 10;
 }
 
@@ -70,7 +121,7 @@ body{
 
 .profile-container{
     flex: 1;
-    background-color: brown;
+    /* background-color: brown; */
     padding: 0 10;
     font-size: 0.6rem;
     font-weight: bold;
