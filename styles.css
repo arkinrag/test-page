@@ -1,26 +1,74 @@
-/* Reset some default margin and padding */
-body, h1, p {
+*{
     margin: 0;
-    padding: 0;
 }
 
-/* Apply styles to the container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
+body{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
 }
 
-/* Style the heading */
-h1 {
-    color: #333;
-    font-family: 'Arial', sans-serif;
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: black;
 }
 
-/* Style the paragraph */
-p {
-    color: #666;
-    font-family: 'Helvetica', sans-serif;
+.navbar-container{
+    display: flex;
+    align-items: center;
+    /*background-color: blueviolet;*/
+    color: white;
+    padding: 0 25;
+    height: 100%;
+    
+}
+
+.Logo-container{
+    flex: 1;
+    text-wrap-mode: nowrap;
+    /*background-color: pink;*/
+    /**/
+    padding: 0 10;
+    cursor: pointer;
+}
+
+.menu-container{
+    flex: 12;
+    /*background-color: green;*/
+    padding: 0 10;
+    font-size: 25;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30;
+    cursor: pointer;
+}
+
+.search-container{
+    flex: 3;
+    /*background-color: red;*/
+    padding: 0 10;
+    
+}
+
+.search-icon-container{
+    text-align: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.profile-container{
+    flex: 1;
+    /*background-color: brown;*/
+    padding: 0 10;
+    font-size: 30;
+    font-weight: bold;
+    cursor: pointer;
 }
