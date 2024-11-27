@@ -1,3 +1,6 @@
+html{
+    font-size: 50px;
+}
 *{
     margin: 0;
 }
@@ -6,39 +9,41 @@ body{
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 50px;
+    font-size: 1rem;
 }
 
 .navbar{
-    width: 100%;
-    height: 100px;
+    width: 1621px;
+    height: 2rem;
     background-color: black;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-container{
     display: flex;
     align-items: center;
-    /*background-color: blueviolet;*/
+    width: 90%;
     color: white;
-    padding: 0 25;
+    padding: 0 15;
     height: 100%;
-    
+    justify-self: center;
+    border: 1px solid white;
 }
 
 .Logo-container{
     flex: 1;
-    text-wrap-mode: nowrap;
-    /*background-color: pink;*/
-    /**/
-    padding: 0 10;
+    text-wrap: nowrap;
+    background-color: red;
+    padding: 0 5;
     cursor: pointer;
 }
 
 .menu-container{
     flex: 12;
-    /*background-color: green;*/
+    background-color: green;
     padding: 0 10;
-    font-size: 25;
+    font-size: 0.5rem;
 }
 
 .menu-list{
@@ -53,22 +58,21 @@ body{
 
 .search-container{
     flex: 3;
-    /*background-color: red;*/
+    background-color: red;
     padding: 0 10;
-    
 }
 
 .search-icon-container{
     text-align: right;
-    font-size: 30px;
+    font-size: 0.6rem;
     cursor: pointer;
 }
 
 .profile-container{
     flex: 1;
-    /*background-color: brown;*/
+    background-color: brown;
     padding: 0 10;
-    font-size: 30;
+    font-size: 0.6rem;
     font-weight: bold;
     cursor: pointer;
 }
