@@ -20,47 +20,50 @@ body{
 }
 
 /* 2xl */
-@media (max-width: 1536px) {
+/* @media (max-width: 1536px) {
   .container {
     max-width: 100%;
   }
-}
+
+
+} */
 /* xl */
 @media (max-width: 1000px) {
-  .container{
+  /* .container{
     max-width: 100%;
-  }
+  } */
   .menu-container{
     display: none;
   }
+  .navbar-backgound{
+    max-height: 1.75rem;
+  }
+  .navbar-container{
+    max-height: 1.75rem;
+    font-size: smaller;
+  }
+  .profile-container{
+    font-size: 0.1rem;
+  }
+  .search-icon-container{
+    font-size: 0.1rem;
+  }
+  
 }
-/* lg */
-/*   @media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
-  .menu-container{
-      display: none;
-  }
-} */
+
 /* md */
-/*   @media (max-width: 768px) {
-  .container {
-    max-width: 640px;
+@media (max-width: 350px) {
+  /* .container {
+    max-width: 100%;
+  } */
+  .search-icon-container{
+    display: none;
   }
-} */
-/* sm */
-/*   @media (max-width: 640px) {
-  .container {
-    max-width: 475px;
+  .profile-container{
+    display: none;
   }
-} */
-/* xs */
-/*   @media (max-width: 475px) {
-  .container {
-    width: 100%;
-  }
-} */
+  
+}
 
 .navbar-backgound{
   height: 2rem;
@@ -118,6 +121,7 @@ body{
   text-align: right;
   font-size: 0.6rem;
   cursor: pointer;
+  /* background-color: purple; */
 }
 
 .profile-container{
