@@ -64,6 +64,12 @@ body{
   .menu-container{
     display: none;
   }
+  .search-icon-container{
+    display: none;
+  }
+  .profile-container{
+    display: none;
+  }
   
 }
 
