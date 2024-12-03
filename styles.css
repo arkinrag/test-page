@@ -35,6 +35,9 @@ body{
   .navbar-container{
     height: 2rem;
   }
+  .hamburger-container{
+    display: none;
+  }
 }
 
 @media (max-width: 1026px) {
@@ -56,6 +59,9 @@ body{
   .navbar-container{
     height: 1.5rem;
   }
+  .hamburger-container{
+    display: none;
+  }
 }
 
 /* md */
@@ -69,6 +75,9 @@ body{
   }
   .profile-container{
     display: none;
+  }
+  .hamburger-container{
+    display: contents;
   }
   
 }
@@ -140,4 +149,9 @@ body{
   font-weight: bold;
   cursor: pointer;
   text-align: right;
+}
+
+.hamburger-icon-container{
+  padding: 0 20;
+  align-content: left;
 }
