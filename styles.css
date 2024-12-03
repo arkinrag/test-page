@@ -19,54 +19,56 @@ body{
   margin-right: auto;
 }
 
-/* 2xl */
-/* @media (max-width: 1536px) {
-  .container {
-    max-width: 100%;
-  }
-
-
-} */
-/* xl */
-@media (max-width: 1026px) {
-  /* .container{
-    max-width: 100%;
-  } */
-  .menu-container{
-    display: none;
-  }
-  .navbar-backgound{
-    max-height: 1.75rem;
-  }
-  .navbar-container{
-    max-height: 1.75rem;
-    font-size: smaller;
-  }
+@media (max-width: 2000px){
   .profile-container{
-    font-size: 0.1rem;
+    font-size: 0.6rem;
   }
   .search-icon-container{
-    font-size: 0.1rem;
+    font-size: 0.6rem;
   }
-  
+  .menu-container{
+    font-size: 0.5rem;
+  }
+  .navbar-backgound{
+    height: 2rem;
+  }
+  .navbar-container{
+    height: 2rem;
+  }
+}
+
+@media (max-width: 1026px) {
+  .profile-container{
+    font-size: 0.3rem;
+  }
+  .search-icon-container{
+    font-size: 0.3rem;
+  }
+  .menu-container{
+    font-size: 0.25rem;
+  }
+  .Logo-container{
+    font-size: 55%;
+  }
+  .navbar-backgound{
+    height: 1.5rem;
+  }
+  .navbar-container{
+    height: 1.5rem;
+  }
 }
 
 /* md */
-@media (max-width: 350px) {
-  /* .container {
-    max-width: 100%;
-  } */
-  .search-icon-container{
-    display: none;
-  }
-  .profile-container{
+@media (max-width: 650px) {
+
+  .menu-container{
     display: none;
   }
   
 }
 
 .navbar-backgound{
-  height: 2rem;
+  /* height: 2rem; */
   background-color: black;
   top: 0;
   position: sticky;
@@ -78,7 +80,7 @@ body{
   justify-content: center;
   color: white;
   /* background-color: purple; */
-  height: 2rem;
+  /* height: 2rem; */
   top: 0;
   position: absolute;
   width: 100%;
@@ -97,7 +99,7 @@ body{
   flex: 12;
   /* background-color: green; */
   padding: 0 10;
-  font-size: 0.5rem;
+  /* font-size: 0.5rem; */
 }
 
 .menu-list{
@@ -119,7 +121,7 @@ body{
 
 .search-icon-container{
   text-align: right;
-  font-size: 0.6rem;
+  /* font-size: 0.6rem; */
   cursor: pointer;
   /* background-color: purple; */
 }
@@ -128,7 +130,7 @@ body{
   flex: 1;
   /* background-color: brown; */
   padding: 0 20;
-  font-size: 0.6rem;
+  /* font-size: 0.6rem; */
   font-weight: bold;
   cursor: pointer;
   text-align: right;
