@@ -1,0 +1,152 @@
+html{
+  font-size: 50px;
+}
+
+*{
+  margin: 0;
+}
+
+@media (max-width: 2000px){
+  .siteHeader{
+    height: 1.5rem;
+  }
+  .siteHeader_Desktop_container{
+    height: 1.5rem;
+  }
+  .siteLogo{
+    font-size: 1rem;
+  }
+  .siteHeader_Navigation{
+    font-size: 0.4rem;
+    gap: 0.6rem;
+    padding: 0 0.4rem;
+  }
+  .searchRegister_container{
+    gap: 0.6rem;
+  }
+  .searchRegister_Account{
+    font-size: 0.7rem;
+  }
+  .searchRegister_Icon{
+    font-size: 0.6rem;
+  }
+
+}
+
+@media (max-width: 950px){
+  .siteHeader{
+    height: 1rem;
+  }
+  .siteHeader_Desktop_container{
+    height: 1rem;
+  }
+  .siteLogo{
+    font-size: 0.5rem;
+  }
+  .siteHeader_Navigation{
+    font-size: 0.2rem;
+    gap: 0.3rem;
+    padding: 0 0.2rem;
+  }
+  .searchRegister_container{
+    gap: 0.3rem;
+  }
+  .searchRegister_Account{
+    font-size: 0.35rem;
+  }
+  .searchRegister_Icon{
+    font-size: 0.3rem;
+  }
+
+}
+
+body{
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.siteHeader{
+  top: 0;
+  position: sticky;
+  background-color: black;
+}
+
+.siteHeader_Desktop_container{
+  /* border: solid white; */
+
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.siteLogo{
+  /* border: solid salmon; */
+
+  text-wrap: nowrap;
+  flex: .5;
+  text-align: center;
+  cursor: pointer;
+}
+
+.siteHeader_Desktop_container > nav{
+  /* border: solid purple; */
+
+  flex: 8;
+}
+
+.siteHeader_Navigation{
+  /* border: solid orange; */
+
+  display: flex;
+  list-style: none;
+  justify-content: left;
+  flex-wrap: nowrap;
+}
+
+.siteHeader_Navigation_Item{
+  /* border: dotted blue; */
+
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+
+.searchRegister_container{
+  /* border: dashed palevioletred; */
+  
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.searchRegister_Account{
+  /* border: solid palevioletred; */
+  
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.searchRegister_Icon{
+  /* border: solid white; */
+  
+  cursor: pointer;
+  
+}
+
+/* .mainpage{
+  border: solid black;
+}
+
+.siteFooter{
+  border: solid rgb(170, 170, 37);
+} */
+

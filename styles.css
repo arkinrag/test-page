@@ -6,6 +6,60 @@ html{
   margin: 0;
 }
 
+@media (max-width: 2000px){
+  .siteHeader{
+    height: 1.5rem;
+  }
+  .siteHeader_Desktop_container{
+    height: 1.5rem;
+  }
+  .siteLogo{
+    font-size: 1rem;
+  }
+  .siteHeader_Navigation{
+    font-size: 0.4rem;
+    gap: 0.6rem;
+    padding: 0 0.4rem;
+  }
+  .searchRegister_container{
+    gap: 0.6rem;
+  }
+  .searchRegister_Account{
+    font-size: 0.7rem;
+  }
+  .searchRegister_Icon{
+    font-size: 0.6rem;
+  }
+
+}
+
+@media (max-width: 950px){
+  .siteHeader{
+    height: 1rem;
+  }
+  .siteHeader_Desktop_container{
+    height: 1rem;
+  }
+  .siteLogo{
+    font-size: 0.5rem;
+  }
+  .siteHeader_Navigation{
+    font-size: 0.2rem;
+    gap: 0.3rem;
+    padding: 0 0.2rem;
+  }
+  .searchRegister_container{
+    gap: 0.3rem;
+  }
+  .searchRegister_Account{
+    font-size: 0.35rem;
+  }
+  .searchRegister_Icon{
+    font-size: 0.3rem;
+  }
+
+}
+
 body{
   font-family: "Merriweather", serif;
   font-weight: 300;
@@ -13,145 +67,86 @@ body{
   font-size: 1rem;
 }
 
-.container{
-  max-width: 100%;
+.siteHeader{
+  top: 0;
+  position: sticky;
+  background-color: black;
+}
+
+.siteHeader_Desktop_container{
+  /* border: solid white; */
+
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  color: white;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 }
 
-@media (max-width: 2000px){
-  .profile-container{
-    font-size: 0.6rem;
-  }
-  .search-icon-container{
-    font-size: 0.6rem;
-  }
-  .menu-container{
-    font-size: 0.5rem;
-  }
-  .navbar-backgound{
-    height: 2rem;
-  }
-  .navbar-container{
-    height: 2rem;
-  }
-  .hamburger-container{
-    display: none;
-  }
+.siteLogo{
+  /* border: solid salmon; */
+
+  text-wrap: nowrap;
+  flex: .5;
+  text-align: center;
+  cursor: pointer;
 }
 
-@media (max-width: 1026px) {
-  .profile-container{
-    font-size: 0.3rem;
-  }
-  .search-icon-container{
-    font-size: 0.3rem;
-  }
-  .menu-container{
-    font-size: 0.25rem;
-  }
-  .Logo-container{
-    font-size: 55%;
-  }
-  .navbar-backgound{
-    height: 1.5rem;
-  }
-  .navbar-container{
-    height: 1.5rem;
-  }
-  .hamburger-container{
-    display: none;
-  }
+.siteHeader_Desktop_container > nav{
+  /* border: solid purple; */
+
+  flex: 8;
 }
 
-/* md */
-@media (max-width: 650px) {
+.siteHeader_Navigation{
+  /* border: solid orange; */
 
-  .menu-container{
-    display: none;
-  }
-  .search-icon-container{
-    display: none;
-  }
-  .profile-container{
-    display: none;
-  }
-  .hamburger-container{
-    display: contents;
-  }
+  display: flex;
+  list-style: none;
+  justify-content: left;
+  flex-wrap: nowrap;
+}
+
+.siteHeader_Navigation_Item{
+  /* border: dotted blue; */
+
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+
+.searchRegister_container{
+  /* border: dashed palevioletred; */
+  
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.searchRegister_Account{
+  /* border: solid palevioletred; */
+  
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.searchRegister_Icon{
+  /* border: solid white; */
+  
+  cursor: pointer;
   
 }
 
-.navbar-backgound{
-  /* height: 2rem; */
-  background-color: black;
-  top: 0;
-  position: sticky;
+/* .mainpage{
+  border: solid black;
 }
 
-.navbar-container{ 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  /* background-color: purple; */
-  /* height: 2rem; */
-  top: 0;
-  position: absolute;
-  width: 100%;
+.siteFooter{
+  border: solid rgb(170, 170, 37);
+} */
 
-}
-
-.Logo-container{
-  flex: 1;
-  text-wrap: nowrap;
-  /* background-color: red; */
-  padding: 0 5;
-  cursor: pointer;
-}
-
-.menu-container{
-  flex: 12;
-  /* background-color: green; */
-  padding: 0 10;
-  /* font-size: 0.5rem; */
-}
-
-.menu-list{
-  display: flex;
-  list-style: none;
-}
-
-.menu-list-item{
-  margin-right: 30;
-  cursor: pointer;
-}
-
-.search-container{
-  flex: 9;
-  /* background-color: red; */
-  padding: 0 10;
-
-}
-
-.search-icon-container{
-  text-align: right;
-  /* font-size: 0.6rem; */
-  cursor: pointer;
-  /* background-color: purple; */
-}
-
-.profile-container{
-  flex: 1;
-  /* background-color: brown; */
-  padding: 0 20;
-  /* font-size: 0.6rem; */
-  font-weight: bold;
-  cursor: pointer;
-  text-align: right;
-}
-
-.hamburger-icon-container{
-  padding: 0 20;
-  align-content: left;
-}
