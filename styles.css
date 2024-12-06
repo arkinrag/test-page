@@ -58,6 +58,24 @@ html{
   .searchRegister_Icon{
     font-size: 0.3rem;
   }
+  .mainpage{
+    font-size: 0.5rem;
+  }
+  
+}
+
+@media (max-width: 600px){
+
+  .siteHeader_Navigation_Item{
+    display: none;
+  }
+  .movie_container_title{
+    margin: auto;
+  }
+  /* .mainpage{
+    font-size: 0.25rem;
+  } */
+
 }
 
 body{
@@ -68,6 +86,8 @@ body{
 }
 
 .siteHeader{
+  /* border: dotted whitesmoke; */
+
   top: 0;
   position: sticky;
   background-color: black;
@@ -90,7 +110,7 @@ body{
   /* border: solid salmon; */
 
   text-wrap: nowrap;
-  flex: .5;
+  flex: 1;
   text-align: center;
   cursor: pointer;
 }
@@ -111,7 +131,7 @@ body{
 }
 
 .siteHeader_Navigation_Item{
-  /* border: dotted blue; */
+ /*  border: dotted blue; */
 
   cursor: pointer;
   text-wrap: nowrap;
@@ -139,14 +159,82 @@ body{
   /* border: solid white; */
   
   cursor: pointer;
+}
+
+.mainpage{
+  /* border: dotted 10px violet; */
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/* .movie_container{
+  border: solid pink;
+} */
+
+.movie_container_item{
+  /* border: dotted rebeccapurple; */
+
+  margin-top: 0.75rem;
+}
+
+.movie_container_title{
+  /* border: dashed green; */
+
+
+  /* margin: auto; */
+  width: fit-content;
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: rgb(37, 37, 37);
+
+}
+ .movie_list {
+  /* border: dotted red; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.movie_item {
+  /* border: solid purple; */
+
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  cursor: pointer;
+}
+
+.title {
+  /* border: dashed yellowgreen; */
   
+  text-wrap: wrap;
+  color: rgb(37, 37, 37);
+  font-size: 0.40rem;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 0.25rem;
+
 }
 
-/* .mainpage{
-  border: solid black;
+.movie_img{
+  /* border: solid black; */
+
+  height: 8rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.siteFooter{
+/* .siteFooter{
   border: solid rgb(170, 170, 37);
 } */
 

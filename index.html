@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles copy.css">
+    <link rel="stylesheet" href="styles_Offline.css">
     <title>Ordinay Movie Critique Website</title>
     <link 
         href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
@@ -50,11 +50,33 @@
                 <div class="movie_container">
                     <div class="movie_container_item"> 
                         
-                        <h1>Trending Movies and TV Shows</h1>
-                            <div id="movies"></div>
+                        <h1 class="movie_container_title">
+                            Trending Today
+                        </h1>
 
-                            <script src="./scripts.js"></script>
+                        <div class="movie_list" id="day"></div>
 
+                        <script type="module">
+                            import { fetchMovies } from './scripts.js';
+
+                            fetchMovies('day', 'day')
+                        </script>
+
+                    </div>
+
+                    <div class="movie_container_item"> 
+                        
+                        <h1 class="movie_container_title">
+                            Trending Weekly
+                        </h1>
+
+                        <div class="movie_list" id="week"></div>
+
+                        <script type="module">
+                            import { fetchMovies } from './scripts.js';
+
+                            fetchMovies('week', 'week')
+                        </script>
 
                     </div>
                 </div>

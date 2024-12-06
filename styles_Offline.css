@@ -61,12 +61,16 @@ html{
   .mainpage{
     font-size: 0.5rem;
   }
+  
 }
 
-@media (max-width: 450px){
+@media (max-width: 600px){
 
   .siteHeader_Navigation_Item{
     display: none;
+  }
+  .movie_container_title{
+    margin: auto;
   }
   /* .mainpage{
     font-size: 0.25rem;
@@ -106,7 +110,7 @@ body{
   /* border: solid salmon; */
 
   text-wrap: nowrap;
-  flex: .5;
+  flex: 1;
   text-align: center;
   cursor: pointer;
 }
@@ -165,32 +169,69 @@ body{
   width: 90%;
 }
 
+/* .movie_container{
+  border: solid pink;
+} */
 
-/* 
-This is api testing
+.movie_container_item{
+  /* border: dotted rebeccapurple; */
 
- */
+  margin-top: 0.75rem;
+}
 
- #movies {
+.movie_container_title{
+  /* border: dashed green; */
+
+
+  /* margin: auto; */
+  width: fit-content;
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: rgb(37, 37, 37);
+
+}
+ .movie_list {
+  /* border: dotted red; */
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: flex-start;
 }
 
 .movie_item {
-  margin: 1rem;
-  text-align: center;
-  color: blak;
-  font-size: 25px;
-  max-width: 500px;
+  /* border: solid purple; */
+
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  cursor: pointer;
 }
 
 .title {
-  padding-top: 16px;
+  /* border: dashed yellowgreen; */
+  
+  text-wrap: wrap;
+  color: rgb(37, 37, 37);
+  font-size: 0.40rem;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 0.25rem;
+
 }
 
-.movie_img_rounded {
-  border-radius: 3rem;
+.movie_img{
+  /* border: solid black; */
+
+  height: 8rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* .siteFooter{
