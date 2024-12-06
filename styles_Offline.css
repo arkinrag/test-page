@@ -94,7 +94,7 @@ body{
 }
 
 .siteHeader_Desktop_container{
-  /* border: solid white; */
+  border: solid white;
 
   display: flex;
   align-items: center;
@@ -107,7 +107,7 @@ body{
 }
 
 .siteLogo{
-  /* border: solid salmon; */
+  border: solid salmon;
 
   text-wrap: nowrap;
   flex: 1;
@@ -116,7 +116,7 @@ body{
 }
 
 .siteHeader_Desktop_container > nav{
-  /* border: solid purple; */
+  border: solid purple;
 
   flex: 8;
 }
