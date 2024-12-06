@@ -6,6 +6,7 @@ html{
   margin: 0;
 }
 
+
 @media (max-width: 2000px){
   .siteHeader{
     height: 1.5rem;
@@ -33,7 +34,7 @@ html{
 
 }
 
-@media (max-width: 950px){
+@media (max-width: 1000px){
   .siteHeader{
     height: 1rem;
   }
@@ -57,6 +58,19 @@ html{
   .searchRegister_Icon{
     font-size: 0.3rem;
   }
+  .mainpage{
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 450px){
+
+  .siteHeader_Navigation_Item{
+    display: none;
+  }
+  /* .mainpage{
+    font-size: 0.25rem;
+  } */
 
 }
 
@@ -68,6 +82,8 @@ body{
 }
 
 .siteHeader{
+  /* border: dotted whitesmoke; */
+
   top: 0;
   position: sticky;
   background-color: black;
@@ -111,7 +127,7 @@ body{
 }
 
 .siteHeader_Navigation_Item{
-  /* border: dotted blue; */
+ /*  border: dotted blue; */
 
   cursor: pointer;
   text-wrap: nowrap;
@@ -139,14 +155,45 @@ body{
   /* border: solid white; */
   
   cursor: pointer;
-  
 }
 
-/* .mainpage{
-  border: solid black;
+.mainpage{
+  /* border: dotted 10px violet; */
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
-.siteFooter{
+
+/* 
+This is api testing
+
+ */
+
+ #movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie_item {
+  margin: 1rem;
+  text-align: center;
+  color: blak;
+  font-size: 25px;
+  max-width: 500px;
+}
+
+.title {
+  padding-top: 16px;
+}
+
+.movie_img_rounded {
+  border-radius: 3rem;
+}
+
+/* .siteFooter{
   border: solid rgb(170, 170, 37);
 } */
 

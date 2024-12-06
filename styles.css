@@ -6,6 +6,7 @@ html{
   margin: 0;
 }
 
+
 @media (max-width: 2000px){
   .siteHeader{
     height: 1.5rem;
@@ -33,7 +34,7 @@ html{
 
 }
 
-@media (max-width: 950px){
+@media (max-width: 1000px){
   .siteHeader{
     height: 1rem;
   }
@@ -57,7 +58,6 @@ html{
   .searchRegister_Icon{
     font-size: 0.3rem;
   }
-
 }
 
 body{
