@@ -4,6 +4,7 @@
 
 html{
   font-size: 50px;
+  background-color: rgb(0, 0, 0);
 }
 
 @media (max-width: 2000px){
@@ -29,6 +30,9 @@ html{
   }
   .searchRegister_Icon{
     font-size: 0.6rem;
+  }
+  .movie_list{
+    justify-content: space-between;
   }
 
 }
@@ -60,10 +64,13 @@ html{
   .mainpage{
     font-size: 0.5rem;
   }
+  /* .movie_list{
+    justify-content: space-around;
+  } */
   
 }
 
-@media (max-width: 600px){
+@media (max-width: 651px){
 
   .siteHeader_Navigation_Item{
     display: none;
@@ -74,6 +81,9 @@ html{
   /* .mainpage{
     font-size: 0.25rem;
   } */
+  .movie_list{
+    justify-content: space-evenly;
+  }
 
 }
 
@@ -82,6 +92,7 @@ body{
   font-weight: 300;
   font-style: normal;
   font-size: 1rem;
+  color: ghostwhite;
 }
 
 .siteHeader{
@@ -109,7 +120,6 @@ body{
   /* border: solid salmon; */
   
   text-wrap: nowrap;
-  /* flex: 1; */
   text-align: right;
   cursor: pointer;
 }
@@ -141,7 +151,6 @@ body{
   /* border: dashed palevioletred; */
   
   display: flex;
-  /* flex: 1; */
   align-items: center;
   justify-content: center;
 
@@ -175,7 +184,7 @@ body{
 .movie_container_item{
   /* border: dotted rebeccapurple; */
 
-  margin-top: 0.75rem;
+  margin-top: 0.50rem;
 }
 
 .movie_container_title{
@@ -187,7 +196,7 @@ body{
   cursor: pointer;
   font-size: 0.75rem;
   margin-bottom: 0.25rem;
-  color: rgb(37, 37, 37);
+  /* color: rgb(37, 37, 37); */
 
 }
  .movie_list {
@@ -195,7 +204,7 @@ body{
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-between; */
   align-content: flex-start;
 }
 
@@ -206,15 +215,17 @@ body{
   flex-direction: column;
   flex: none;
   cursor: pointer;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
 }
 
 .title {
   /* border: dashed yellowgreen; */
   
   text-wrap: wrap;
-  color: rgb(37, 37, 37);
-  font-size: 0.40rem;
-  font-weight: bold;
+  /* color: rgb(37, 37, 37); */
+  font-size: 0.35rem;
+  /* font-weight: bold; */
   text-align: center;
   width: fit-content;
   margin: auto;
@@ -223,10 +234,9 @@ body{
 }
 
 .movie_img{
-  /* border: solid black; */
+ /*  border: solid yellow; */
 
   height: 8rem;
-  width: 90%;
   border-radius: 0.5rem;
   
   margin-left: auto;
