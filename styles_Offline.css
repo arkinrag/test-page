@@ -1,11 +1,10 @@
-html{
-  font-size: 50px;
-}
-
 *{
   margin: 0;
 }
 
+html{
+  font-size: 50px;
+}
 
 @media (max-width: 2000px){
   .siteHeader{
@@ -94,7 +93,7 @@ body{
 }
 
 .siteHeader_Desktop_container{
-  border: solid white;
+  /* border: solid white; */
 
   display: flex;
   align-items: center;
@@ -107,18 +106,18 @@ body{
 }
 
 .siteLogo{
-  border: solid salmon;
-
+  /* border: solid salmon; */
+  
   text-wrap: nowrap;
-  flex: 1;
-  text-align: center;
+  /* flex: 1; */
+  text-align: right;
   cursor: pointer;
 }
 
 .siteHeader_Desktop_container > nav{
-  border: solid purple;
+  /* border: solid purple; */
 
-  flex: 8;
+  flex: 1;
 }
 
 .siteHeader_Navigation{
@@ -142,7 +141,7 @@ body{
   /* border: dashed palevioletred; */
   
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   align-items: center;
   justify-content: center;
 
