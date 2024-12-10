@@ -100,7 +100,7 @@ body{
 
   top: 0;
   position: sticky;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.797);
   backdrop-filter: blur(10px);
 }
 
