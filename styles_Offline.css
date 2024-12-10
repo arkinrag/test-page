@@ -100,8 +100,8 @@ body{
 
   top: 0;
   position: sticky;
-  background-color: rgba(0, 0, 0, 0.797);
-  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
 }
 
 .siteHeader_Desktop_container{
