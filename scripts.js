@@ -1,6 +1,6 @@
 const apiKey = 'f6f18c676cae5a2f43248f81247dde67';
 
-export async function fetchMovies(input,containerId) {
+export async function fetchMovies(input,containerId) {  
     console.log(input, containerId)
     const apiUrl = `https://api.themoviedb.org/3/trending/all/${input}?api_key=${apiKey}`;
     
