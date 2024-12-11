@@ -11,6 +11,7 @@
 
     <!--CSS and JavaScript-->
     <link rel="stylesheet" type="text/css" href="styles_Offline.css"/>
+    <script src="scripts.js"></script>
 
     <!--Fonts/Icons-->
     <link 
@@ -25,9 +26,14 @@
             <header class="siteHeader">
                 <div class="siteHeader_container">
                     <div class="siteHeader_Desktop_container">
-                        <div class="siteLogo">
-                            🍆/🍒
-                        </div>
+                        <!-- <a href="index_Offline.html"> -->
+                            <div class="siteLogo">
+                                <a href="index_Offline.html" style="text-decoration: none; color: inherit;">
+                                    🍆/🍒
+                                </a>
+                            </div>    
+                            
+                        <!-- </a> -->
                         <nav>
                             <ul class="siteHeader_Navigation">
                                 <li class="siteHeader_Navigation_Item">Movies</li>
@@ -53,48 +59,11 @@
             </header>
 
             <div class="mainpage">
-                <div class="movie_container">
-                    <div class="movie_container_item"> 
-                        
-                        <h1 class="movie_container_title">
-                            Trending Today
-                        </h1>
-
-                        <div class="movie_list" id="day"></div>
-
-                        <script type="module">
-                            import { fetchMovies } from './scripts.js';
-
-                            fetchMovies('day', 'day')
-                        </script>
-
-                    </div>
-
-                    <div class="movie_container_item"> 
-                        
-                        <h1 class="movie_container_title">
-                            Trending Weekly
-                        </h1>
-
-                        <div class="movie_list" id="week"></div>
-
-                        <script type="module">
-                            import { fetchMovies } from './scripts.js';
-
-                            fetchMovies('week', 'week')
-                        </script>
-
-                    </div>
-                </div>
+                Main Page
             </div>
 
             <footer class="siteFooter">
             </footer>
         </div>
     </div>
-
-    <!-- <script src="./script.js"></script> -->
-
 </body>
-
-</html>

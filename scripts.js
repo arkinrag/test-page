@@ -21,20 +21,25 @@ export async function fetchMovies(input,containerId) {
         data.results.slice(0,4).forEach(media => {
             const movieCard = createMovieCard(media);
             targetContainer.appendChild(movieCard);
+
         });
+
+        console.log(data.results)
     }catch (error) {
         console.error("Error fetching dat:", error);
     }
 }
 
 function createMovieCard(media) {
-    const { title, name, poster_path } = media;
+    const { title, name, poster_path, id} = media;
 
     const movieCard = document.createElement("div");
     movieCard.classList.add("movie_item")
 
     movieCard.innerHTML = `
-        <img src="https://image.tmdb.org/t/p/w500/${poster_path}" class="movie_img">
+        <a href="movie.html">
+            <img src="https://image.tmdb.org/t/p/w500/${poster_path}" class="movie_img">
+        </a>
         <div class = "title">${title || name}</div>
     `;
     return movieCard;
