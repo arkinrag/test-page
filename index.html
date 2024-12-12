@@ -11,6 +11,7 @@
 
     <!--CSS and JavaScript-->
     <link rel="stylesheet" type="text/css" href="styles_Offline.css"/>
+    <script src="scripts.js"></script>
 
     <!--Fonts/Icons-->
     <link 
@@ -62,10 +63,8 @@
 
                         <div class="movie_list" id="day"></div>
 
-                        <script type="module">
-                            import { fetchMovies } from './scripts.js';
-
-                            fetchMovies('day', 'day')
+                        <script>
+                            fetchMovies('day','day')
                         </script>
 
                     </div>
@@ -78,10 +77,8 @@
 
                         <div class="movie_list" id="week"></div>
 
-                        <script type="module">
-                            import { fetchMovies } from './scripts.js';
-
-                            fetchMovies('week', 'week')
+                        <script>
+                            fetchMovies('week','week')
                         </script>
 
                     </div>

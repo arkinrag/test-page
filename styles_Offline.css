@@ -293,6 +293,21 @@ body{
   margin-right: auto;
 }
 
+.single_movie{
+  border: solid purple;
+  
+  display: grid;
+  grid: 100%;
+  /* flex-direction: column; */
+}
+
+.single_movie > div{
+  border: solid yellow;
+}
+.single_movie > img {
+  border: solid red;
+}
+
 /* .siteFooter{
   border: solid rgb(170, 170, 37);
 } */
